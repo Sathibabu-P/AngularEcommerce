@@ -1,0 +1,115 @@
+<html ng-app="myApp">
+<head>
+	<title>Demo</title>
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-cookies.min.js"></script>
+   
+    <script type="text/javascript" src="js/rzslider.min.js"></script>	
+	<script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/products.js"></script>
+	<script type="text/javascript" src="js/services/products.js"></script>
+     <script type="text/javascript" src="js/controllers/users.js"></script>
+    <script type="text/javascript" src="js/services/users.js"></script>
+    <script type="text/javascript" src="js/controllers/cart.js"></script>
+    <script type="text/javascript" src="js/services/cart.js"></script>
+    <script type="text/javascript" src="js/controllers/checkout.js"></script>
+	 <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Customizer -->
+    <link rel="stylesheet" href="css/customizer.min.css">
+     <!-- Slider -->
+    <link rel="stylesheet" href="css/rzslider.min.css">
+</head>
+<body class="hidden-sn pink-skin animated" ng-controller="ApplicationController">
+	<!--<div class="container" ng-controller="AppCtrl">
+		<h1>AngulAir</h1>
+
+		<ul class="nav nav-pills">
+			<li ng-class="destinationsActive">
+				<a href="#">Destinations</a>
+			</li>
+			<li ng-class="flightsActive">
+				<a href="#/flights">Flights</a>
+			</li>
+			<li ng-class="reservationsActive">
+				<a href="#/reservations">Reservations</a>
+			</li>
+		</ul>
+
+		<div ng-view></div>
+	</div>-->
+     <div ng-include="'partials/navbar.html'"></div>
+   
+    <div ng-view></div>
+   
+</body>
+   <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <!-- Customizer -->
+    <script type="text/javascript" src="js/customizer.min.js"></script>
+
+   
+
+    
+
+    <script type="text/javascript">
+        /* WOW.js init */
+        new WOW().init();
+
+        /* Side navigation toggle */
+        $(".button-collapse").sideNav();
+        var el = document.querySelector('.custom-scrollbar');
+        Ps.initialize(el);
+
+
+        /* Material Select */
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+        
+        // Tooltips Initialization
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('#toggle').tooltip('show')
+        })
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDsxx2hnviz_eInMm8Ax2NoiowdIzrYb8Q",
+        authDomain: "ecommerce-96c0c.firebaseapp.com",
+        databaseURL: "https://ecommerce-96c0c.firebaseio.com",
+        projectId: "ecommerce-96c0c",
+        storageBucket: "ecommerce-96c0c.appspot.com",
+        messagingSenderId: "231130156885"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+</html>

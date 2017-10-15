@@ -1,0 +1,68 @@
+
+<!--  <div ng-include="'partials/navbar.html'"></div> -->
+     <main id="mainContainer">
+       
+        <!-- Main Container -->
+        <div class="container">
+
+            <div class="row">
+               
+                <div class="col-lg-4 filter-menu">
+                <!-- Sidebar -->
+                	<div ng-include src="'partials/sidebar.html'"></div>
+                <!-- /.Sidebar -->
+				</div>
+                <!-- Content -->
+                <div class="col-lg-8">
+                   
+                    <!-- Filter Area -->
+                    <div class="row">
+                       
+                        <div class="col-6 col-md-6">
+                           
+                            <!-- Sort by -->
+                            <div class="input"><input ng-model="search"  class="form-control" placeholder="  Search"/>   </div>
+                            <!-- /.Sort by -->
+                          
+                            
+                        </div>
+                        
+                        <div class="col-6 col-md-6 text-right">
+                           
+                           	 <select class="form-control" data-ng-change="orderByChange()" class="order-by" data-ng-model="orderBy" id="orderBy">
+                                <option selected="selected" value="price-low-high">Price (low to high)</option>
+                                <option value="price-high-low">Price (high to low)</option>                               
+                            </select>
+                            <!-- View Switcher -->
+                           <!-- <a class="btn btn-secondary waves-effect waves-light"><i class="fa fa-th" aria-hidden="true"></i> Grid</a>
+                            <a class="btn btn-primary waves-effect waves-light"><i class="fa fa-th-list" aria-hidden="true"></i> List</a>-->
+                            <!-- /.View Switcher -->
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- /.Filter Area -->
+
+                    <!-- Products List -->
+                    <section class="section">
+                       
+                        <!-- Single Product -->
+                       <div ng-include src="'partials/product.html'"></div>
+                        <!-- /.Single Product -->
+                        
+                    </section>
+                    <!-- /.Products List -->
+                    
+                </div>
+                <!-- /.Content -->
+                
+            </div>
+            
+        </div>
+        <!-- /.Main Container -->
+        
+</main>
+ 
+<!-- <div ng-repeat="product in products">
+            {{product.body}}
+  </div>-->

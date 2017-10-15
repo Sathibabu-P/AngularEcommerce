@@ -1,0 +1,51 @@
+<main id="mainContainer">
+        <!-- Main Container -->
+        <div class="container">
+
+            <!-- Signup or Login -->
+            <section class="section mt-6">
+                <div class="row">
+                    <div class="col-lg-3 mb-3"></div>
+                    <div class="col-lg-6 mb-3">
+                        <div class="card">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header">
+                                    <h3>Already signed up?</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                 <form ng-submit='login()'>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input id="form2" class="form-control" type="text" ng-model='email'>
+                                    <label for="form2">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input id="form4" class="form-control" type="password" ng-model='password'>
+                                    <label for="form4">Your password</label>
+                                </div>
+
+                                <div class="text-center">
+                                   <!--  <fieldset class="form-group">
+                                        <input id="checkbox2" type="checkbox">
+                                        <label for="checkbox2">Remember me</label>
+                                    </fieldset> -->
+                                    <button class="btn btn-primary waves-effect waves-light">Sign in</button>
+                                      <p><a class="" href="#!signup">New User..?</a></p>
+                                </div>
+                              <!--   <div class="text-center">
+                                    <p><a href="#">Forgot Your Password?</a></p>
+                                </div> -->
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- /.Main Container -->
+    </main>

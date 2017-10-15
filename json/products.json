@@ -1,0 +1,94 @@
+ {
+  "products": [		
+ 		{
+			"title": "Red Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 1200,
+			"sp": 950,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20%282%29.jpg",
+			"id": 0,
+			"size": 1,
+			"color": 0
+		},
+		{
+			"title": "Red Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 1890,
+			"sp": 1520,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(4).jpg",
+			"id": 1,
+			"size": 2,
+			"color": 0
+		},
+		{	
+			"id": 2,
+			"title": "Red Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 3500,
+			"sp":2500,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20%282%29.jpg",
+			"size": 3,
+			"color": 0
+		},
+		{	
+			"id": 3,
+			"title": "Green Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 850,
+			"sp": 700,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg",
+			"size": 1,
+			"color": 1
+		},
+		{
+			"id": 4,
+			"title": "Green Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 5500,
+			"sp": 4500,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(1).jpg",
+			"size": 3,
+			"color": 1
+		},
+		{
+			"id": 5,
+			"title": "Blue Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 2500,
+			"sp": 2000,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(2).jpg",
+			"size": 2,
+			"color": 3
+		},
+		{
+			"id": 6,
+			"title": "Blue Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 1500,
+			"sp": 1100,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg",
+			"size": 3,
+			"color": 3
+		},
+		{
+			"id": 7,
+			"title": "White Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 950,
+			"sp": 550,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(5).jpg",
+			"size": 2,
+			"color": 2
+		},
+		{
+			"id": 8,
+			"title": "White Sweater",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eum enim laboriosam eius illum iure.",
+			"ap": 500,
+			"sp": 250,
+			"img": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(6).jpg",
+			"size": 1,
+			"color": 2
+		}
+	]
+}

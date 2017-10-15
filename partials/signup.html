@@ -1,0 +1,70 @@
+<main id="mainContainer">
+        <!-- Main Container -->
+        <div class="container">
+
+            <!-- Signup or Login -->
+            <section class="section mt-5">
+                <div class="row">
+                    <div class="col-lg-3 mb-3"></div>
+                    <div class="col-lg-6 mb-3">
+                        <!-- Signup form -->
+
+                        <div class="card">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header">
+                                    <h3>Create an Account</h3>
+                                </div>
+                                 <form ng-submit="signup(credentials)" name="RegisterForm">
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input id="form3" class="form-control" type="text" ng-model="credentials.username" required>
+                                    <label for="form3">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input id="form2" class="form-control" type="email" ng-model="credentials.email" required>
+                                    <label for="form2">Your email</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input id="form4" class="form-control" type="password" ng-model="credentials.password" required>
+                                    <label for="form4">Your password</label>
+                                </div>
+
+                               <!--   <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i> 
+                                    <input id="form4" class="form-control" type="password" ng-model="credentials.cpassword"  required>
+                                    <label for="form4">Confirm password {{}}</label>                                   
+                                    <p ng-show="credentials.password != credentials.cpassword" class="help-block">Confirm password Not Matched.</p>
+                                </div> -->
+
+                                <div class="text-center">
+                                    <!-- <fieldset class="form-group">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label for="checkbox1">Subscribe me to the newsletter</label>
+                                    </fieldset> -->
+                                    <button class="btn btn-primary waves-effect waves-light" ng-disabled="RegisterForm.$invalid">Sign up</button>
+                                    <p><a class="" href="#!signin">Already User..?</a></p>
+                                    <!-- <p>or</p>
+                                    <button type="button" class="btn btn-fb waves-effect waves-light"><i class="fa fa-facebook left"></i> Login with Facebook</button> -->
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+
+                        <!-- /.Signup form -->
+                    </div>
+                    <div class="col-lg-3 mb-3"></div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- /.Main Container -->
+    </main>
+
+

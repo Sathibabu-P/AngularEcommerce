@@ -1,0 +1,103 @@
+<main id="mainContainer">
+        <!-- Main Container -->
+        <div class="container">
+
+            <!-- Signup or Login -->
+            <section class="section mt-6">
+                <div class="row">
+                 
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header">
+                                    <h3>User Information</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                 <form ng-submit='checkout(user)' name="checkoutForm">
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="form3" class="form-control" ng-model="user.name" required>
+                                    <label for="form3">Your name</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="form2" class="form-control" ng-model="user.email" required>
+                                    <label for="form2">Your email</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-mobile prefix"></i>
+                                    <input type="text" id="form32" class="form-control" ng-model="user.phoneno" required>
+                                    <label for="form34">Phone No</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix"></i>
+                                    <textarea type="text" id="form8" class="md-textarea" ng-model="user.address" required></textarea>
+                                    <label for="form8">Address</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-default" type="submit">Submit</button>                                    
+                                </div>
+
+                              <!--   <div class="text-center">
+                                    <p><a href="#">Forgot Your Password?</a></p>
+                                </div> -->
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        
+                       <div class="card">
+                            <div class="card-block">  
+
+                             <div class="form-header">
+                                    <h4>Your cart</h4>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                            
+                            <!-- Body -->
+                            
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>                                
+                                            <th>Product name</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="product in cart">
+                                            <th scope="row">{{product.title}}</th>
+                                            <td scope="row">{{product.ap}}</th>
+                                            <td>{{product.quantity}}</td>
+                                            <td>{{product.quantity * product.ap}}$</td>
+                                        </tr>                           
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="total red-text">
+                                            <th></th>
+                                            <th></th>
+                                            <td scope="row">Total</td>
+                                            <td scope="row">{{total}}$</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>                   
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- /.Main Container -->
+    </main>

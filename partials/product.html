@@ -1,0 +1,53 @@
+   <!-- Single Product -->
+                        <div class="row" ng-repeat="product in products | filter:search |filter:priceRange | filter:sizeFilter | filter:colorFilter | orderBy: [orderByOptions, orderByPriceLowToHigh]:reverse track by $index">
+
+                            <!--First column-->
+                            <div class="col-lg-5 mb-r">
+                               
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight">
+                                    <a href="#!/products/{{product.id}}"> <img src="{{product.img}}" class="img-fluid"> </a>
+                                    <!--<a href="#" data-toggle="modal" data-target="#quick-look-ex">
+                                        <div class="mask waves-light waves-effect waves-light">
+                                            <div class="flex-center product-quick-look">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>-->
+                                </div>
+                                
+                            </div>
+                            <!--/First column-->
+
+                            <!-- Second column -->
+                            <div class="col-lg-7 mb-r">
+                               
+                                <!-- Excerpt -->
+                                <h4><a href="#!/products/{{product.id}}">{{product.title}}</a></h4>
+
+                                <!-- Product Description -->
+                                <p>{{product.body}}</p>
+								
+                                <p><span class="red-text">Color : {{colors[product.color].title}}</span>
+                                   <span class="blue-text">Size : {{sizes[product.size].title}}</span></p>
+                                <!-- Review -->
+                                <!--<div class="orange-text">
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                </div>-->
+
+                                <p><span class="green-text price"><strong>${{product.sp}}</strong></span> <span class="grey-text"><small><s>${{product.ap}}</s></small></span></p>
+
+                                <!-- Buttons -->
+                                <a class="btn btn-secondary waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                <a class="btn btn-primary waves-effect waves-light" ng-click="addItemToCart(product)"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
+                                <!-- /.Buttons -->
+                                
+                            </div>
+                            <!-- /.Second column -->
+
+                        </div>
+                        <!-- /.Single Product -->

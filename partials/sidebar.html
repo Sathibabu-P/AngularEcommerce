@@ -1,0 +1,47 @@
+
+                    <div class="" style="position:relative; top: 90px; z-index: 2;">
+                        <!-- Panel -->
+                        <h5><strong>PRICE RANGE</strong></h5>
+                        <div class="divider"></div>
+                        
+                          
+                            
+
+                        <rzslider
+                        rz-slider-model="slider.min"
+                        rz-slider-high="slider.max"
+                        rz-slider-options="slider.options"></rzslider>
+
+                        <!-- Filter by color-->
+                        <h5 class="pt-2"><strong>COLOR</strong></h5>
+                        <div class="divider"></div>
+
+                        <ul>
+                        	<li ng-repeat="color in colors">                           
+                                <input type="checkbox" ng-click="includeColor(color.id)" id="checkbox_cl{{color.id}}"> 
+            					<label for="checkbox_cl{{color.id}}">{{color.title}}</label>
+                            </li>
+                        </ul>
+
+                        <!-- Filter by size -->
+                        <h5 class="pt-2"><strong>SIZE</strong></h5>
+                        <div class="divider"></div>
+
+                        <ul>
+                        		<li ng-repeat="size in sizes">   
+                        	    <input type="checkbox" ng-click="includeSizes(size.id)" id="checkbox_sz{{size.id}}"/> 
+                                <label for="checkbox_sz{{size.id}}">{{size.title}}</label>
+                                </li>
+                        	<!--<li ng-repeat="size in sizes">                           
+                                <input type="checkbox" ng-model="size" id="checkbox_{{size}}"> 
+            					<label for="checkbox_{{size}}">{{size.title}}</label>
+                            </li>
+                            <li>
+                                <input id="checkbox17" type="checkbox">
+                                <label for="checkbox17">Extra Large</label>
+                            </li>-->
+                        </ul>
+                        <!--/.Panel-->
+                        
+                    </div><div style="width: 255px; height: 868.5px;" class="sticky-placeholder"></div>
+                    

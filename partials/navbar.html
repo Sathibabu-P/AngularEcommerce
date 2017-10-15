@@ -1,0 +1,97 @@
+<nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar double-nav" style="background: #532a3c;">
+
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <ol class="breadcrumb header-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#!/">Home</a></li>
+                   <!--  <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                    <li class="breadcrumb-item active">Blog Post</li> -->
+                </ol>
+            </div>
+
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+                <li class="nav-item ">
+                    <a class="nav-link waves-effect waves-light" href="#!cart"><span class="badge red">{{count}}</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="hidden-sm-down">Cart</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#!signin"><i class="fa fa-user"></i> <span class="hidden-sm-down">Login</span></a>
+                </li>
+               <!--  <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle waves-effect waves-light" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Account</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+
+        </nav>
+
+
+
+
+<!-- href="#" data-toggle="modal" data-target="#login" -->
+    <div class="modal fade cart-modal show" id="#" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">       
+            <div class="modal-dialog" role="document">           
+            <!-- Content -->
+            <div class="modal-content">               
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>                    
+                </div>
+                
+                <!-- Body -->
+                <div class="modal-body">
+                        <div class="card">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header">
+                                    <h3>Already signed up?</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input id="form5" class="form-control" type="text">
+                                    <label for="form5">Your name</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input id="form6" class="form-control" type="text">
+                                    <label for="form6">Your email</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <fieldset class="form-group">
+                                        <input id="checkbox2" type="checkbox">
+                                        <label for="checkbox2">Remember me</label>
+                                    </fieldset>
+                                    <button class="btn btn-primary waves-effect waves-light">Sign in</button>
+                                </div>
+                                <div class="text-center">
+                                    <p><a href="#">Forgot Your Password?</a></p>
+                                </div>
+                                <div class="text-center">
+                                    <p><a href="#" data-toggle="modal" data-target="#signup"  data-dismiss="modal">New User..?</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- /.Content -->            
+        </div>        
+    </div>
+
+
